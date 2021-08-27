@@ -72,16 +72,16 @@ void PrintStack(struct MultipleStack* mstk){
     int p = mstk->top1;
     printf("First Stack is: ");
     for(int i=p;i>=0;i--){
-        printf("%d", mstk->array[i]);
+        printf(" %d ", mstk->array[i]);
     } 
     p = mstk->top2;
     printf("\nSecond Stack is: ");
     for(int i=p;i<mstk->capacity;i++){
-        printf("%d", mstk->array[i]);
+        printf(" %d ", mstk->array[i]);
     } 
 }
 void print_line(){
-    printf("\n---------------------------------------------------------------------------------------");
+    printf("\n------------------------------------------------------------------------\n");
 }
 int main(){
     int n;
@@ -95,7 +95,7 @@ int main(){
     print_line();
     for(int i=0;i<n;i++){
         int op, sk_no, val;
-        printf("\t\t\t\tOperation Number is %d: ", i+1);
+        printf("\t\tOperation Number is %d: ", i+1);
         printf("Enter Operation Number and Stack Number. \n");
         scanf("%d%d",&op,&sk_no);
         switch(op){
