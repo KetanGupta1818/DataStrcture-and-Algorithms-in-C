@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main(){
+    char *arr = (char*)malloc(50*sizeof(char));
+    cin >> arr;
+    char *temp = arr;
+    char **arr2 = (char **)malloc(sizeof(char*));
+    for(int i=0;i<50;i++) arr2[i] = (char*)malloc(5*sizeof(char));
+    arr[1] = 'ands';
+    while(*temp!='\0'){
+        cout<<*temp;
+        /*while(*temp!='(' && *temp!=')' && *temp!='*' && *temp!='-' && *temp!='/'){
+            char
+        }*/
+        temp++;
+    }
+}
